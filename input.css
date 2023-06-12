@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .main-palette-div {
+    @apply max-w-full flex flex-col md:flex-row mt-4;
+  }
+  .palette-title {
+    @apply uppercase text-center font-semibold text-xl mt-9;
+  }
+  .flex-attrs {
+    @apply basis-1/5 md:h-64;
+  }
+  .p-inside-color-light {
+    @apply flex place-content-center pt-14 md:pt-28 font-bold text-2xl text-slate-100 drop-shadow-2xl;
+  }
+  .p-inside-color-dark {
+    @apply flex place-content-center pt-14 md:pt-28 font-bold text-2xl  text-slate-900;
+  }
+}
